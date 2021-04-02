@@ -1,0 +1,43 @@
+.testimonials{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    .wrapper{
+        flex-direction: column;
+        align-items: center;
+        .btn{
+            margin-top: 32px;
+        }
+    }
+}
+.card-slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 585px;
+    height: 310px;
+    background: $base;
+box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.1);
+border-radius: 5px;
+font-size: 14px;
+p{
+    width: 440px;
+    text-align: left;
+}
+}
+.img-testim {
+
+    margin-top: 47px;
+    width: 68px;
+    height: 68px;
+    border: 1px solid #BDBDBD;
+box-sizing: border-box;
+border-radius: 50%;
+margin-bottom: 17px;
+}
+.slider-container-testimonials{
+    display: flex;
+    margin-top: 61px;
+    margin-bottom: 88px;
+}

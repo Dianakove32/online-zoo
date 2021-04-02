@@ -1,0 +1,76 @@
+.content{
+    display: flex;
+    padding-top: 60px;
+    .wrapper{
+        flex-direction: column;
+    }
+}
+.animal-content{
+    display: flex;
+}
+.text-content{
+    width: 380px;
+    margin-left: 30px;
+    font-size: 14px;
+    >p{
+        margin-top: 6px;
+        margin-bottom: 12px;
+    }
+    .btn{
+        width: 194px;
+        margin-top: 35px;
+    }
+}
+.slider-BROADCAST{
+    display: flex;
+    flex-direction: column;
+
+}
+.round-animal{
+    display: inline-block;
+width: 157px;
+height: 157px;
+border-radius: 50%;
+ padding: 10px;
+margin-bottom: 10px;
+>img{
+
+
+
+
+
+    width: 137px;
+    height: 137px;
+    border-radius: 50%;
+    object-fit: unset;
+}
+}
+// .panda{
+//     background-image: url('./src/assets/index/4-1.png');
+
+//      background-size:cover
+
+//     //  border-image-source: linear-gradient(103.3deg, #07EEE0 -15.1%, #DF496D 92.15%);
+// }
+// .bird{
+//     background-image: url('./src/assets/index/4-2.png');
+// }
+// .monkey{
+//     background-image: url('./src/assets/index/4-3.png');
+
+// }
+// .crocodail{
+//     background-image: url('./src/assets/index/4-4.png');
+// }
+
+.active-round{
+    border-image-source: linear-gradient(103.3deg, #07EEE0 -15.1%, #DF496D 92.15%);
+    border: 3px solid   ;
+    border-color: $gradient;
+}
+.small-video{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+
+}

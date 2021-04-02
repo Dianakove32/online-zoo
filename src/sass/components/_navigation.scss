@@ -1,0 +1,36 @@
+.nav{
+     width: 572px;
+
+     margin-left: auto;
+     margin-right: auto;
+}
+.navigation-ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 18.75px;
+
+}
+.item-nav{
+    list-style: none;
+    padding: 0 10px;
+    cursor: pointer;
+    line-height: 18.75px;
+    @extend %transition;
+
+    &:hover{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    >a{
+margin-bottom: 3px;
+        font-size: 16px;
+        color:$text ;
+        text-decoration: none;
+
+    }
+}
+.active-nav{
+    font-weight: bold;
+    text-decoration: underline;
+}

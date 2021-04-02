@@ -1,0 +1,25 @@
+.slider-watch{
+    background-image: url("./src/assets/Group 16.png");
+    background-repeat: no-repeat;
+    background-position: top 50% left 0;
+    position: absolute;
+    right: 0;
+    bottom: 311px;
+    width:794px ;
+
+}
+.vector{
+    width: 17px;
+    height: 30px;
+margin-top: 300px;
+&:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+
+}
+}
+.slider-container-ourMission{
+   display: flex;
+   justify-content: space-between;
+    width: 1200px;
+}

@@ -1,0 +1,60 @@
+ .form{
+     h4{
+         margin-bottom: 33px;
+         margin-top: 67px;
+     }
+ }
+ .input{
+    background-color: $dark;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    width: 383px;
+font-style: 14px;
+color: #E0E0E0;
+margin-bottom: 20px;
+padding-bottom: 10px;
+
+}
+textarea{
+      border: none;
+    background-color: $dark;
+    //border: 1px solid #BDBDBD;
+    width: 383px;
+    height: 115px;
+    width: 380px;
+
+}
+
+fieldset{
+
+    height: 144px;
+    width: 380px;
+
+    border-radius: 3px;
+}
+.btn-send{
+    margin-left: 234px;
+margin-top: 20px;
+    background-color: $dark;
+    color: $base;
+    font-size: 14px;
+line-height: 16px;
+border: none;
+width: 100px;
+// background-image: url("../../assets/index/send.png");
+// background-repeat: no-repeat;
+img{
+    width: 48px;
+
+}
+}
+.label{
+
+    margin-left: 6px;
+    color: #BDBDBD
+}
+#agree  {
+    background-color: $dark;
+    border: 1px solid #BDBDBD;
+
+}

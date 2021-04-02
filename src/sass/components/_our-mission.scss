@@ -1,0 +1,24 @@
+.our-mission{
+    background: $bgLight;
+    padding-top: 100px;
+    padding-bottom: 132px;
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 380px;
+
+    h4{
+     margin-top: 15px;
+    margin-bottom: 15px;
+    }
+    p{
+        margin: 0;
+        font-size: 14px;
+    }
+}
