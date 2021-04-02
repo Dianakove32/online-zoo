@@ -1,6 +1,7 @@
 .content{
     display: flex;
     padding-top: 60px;
+    padding-bottom: 100px;
     .wrapper{
         flex-direction: column;
     }
@@ -24,7 +25,9 @@
 .slider-BROADCAST{
     display: flex;
     flex-direction: column;
-
+    position: relative;
+    margin-left: 40px;
+margin-top: 65px;
 }
 .round-animal{
     display: inline-block;
@@ -34,43 +37,77 @@ border-radius: 50%;
  padding: 10px;
 margin-bottom: 10px;
 >img{
-
-
-
-
-
-    width: 137px;
+   width: 137px;
     height: 137px;
     border-radius: 50%;
     object-fit: unset;
 }
 }
-// .panda{
-//     background-image: url('./src/assets/index/4-1.png');
+  .panda{
+     background-image: url('./src/assets/index/4-1.png');
+     width:108px;
+     height: 108px;
+      background-size:cover;
+      margin-left: auto;
+      margin-right: auto;
+      background-repeat: no-repeat;
 
-//      background-size:cover
 
 //     //  border-image-source: linear-gradient(103.3deg, #07EEE0 -15.1%, #DF496D 92.15%);
-// }
-// .bird{
-//     background-image: url('./src/assets/index/4-2.png');
-// }
-// .monkey{
-//     background-image: url('./src/assets/index/4-3.png');
+  }
+ .bird{
+     background-image: url('./src/assets/index/4-2.png');
+     width:108px;
+height: 108px;
+      background-size:cover;
+      margin-left: auto;
+      margin-right: auto;
+      background-repeat: no-repeat;
+ }
+ .monkey{
+     background-image: url('./src/assets/index/4-3.png');
+     width:108px;
+     height: 108px;
+           background-size:cover;
+           margin-left: auto;
+           margin-right: auto;
+           background-repeat: no-repeat;
 
-// }
-// .crocodail{
-//     background-image: url('./src/assets/index/4-4.png');
-// }
+ }
+ .crocodail{
+     background-image: url('./src/assets/index/4-4.png');
+     width:108px;
+     height: 108px;
+           background-size:cover;
+           margin-left: auto;
+           margin-right: auto;
+           background-repeat: no-repeat;
+ }
 
 .active-round{
-    border-image-source: linear-gradient(103.3deg, #07EEE0 -15.1%, #DF496D 92.15%);
-    border: 3px solid   ;
-    border-color: $gradient;
+    // border-image-source: linear-gradient(to right, red , green);
+    border: 3px solid red  ;
+    width: 137px;
+    height: 137px;
+
 }
 .small-video{
     margin-top: 30px;
     display: flex;
     justify-content: space-around;
+
+}
+
+.vectorUp{
+    transform: rotate(90deg);
+    position: absolute;
+   top: -350px;
+    left: 50%;
+}
+.vectorDown{
+    position: absolute;
+    transform: rotate(-90deg);
+    left: 50%;
+    bottom: 160px;
 
 }

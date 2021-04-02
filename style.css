@@ -540,7 +540,7 @@ label {
   position: absolute;
   right: 0;
   bottom: 311px;
-  width: 794px;
+  width: 1100px;
 }
 
 .vector {
@@ -557,6 +557,36 @@ label {
   display: flex;
   justify-content: space-between;
   width: 1200px;
+}
+
+.slider-container {
+  margin-left: 107px;
+  display: flex;
+}
+.slider-container .sl-panda {
+  margin-left: 46px;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.slider-container .sl-panda .content-pict {
+  position: absolute;
+  bottom: 20px;
+  width: 210px;
+  color: #FEFEFE;
+  margin-left: 20px;
+  text-align: center;
+}
+.slider-container .sl-panda .content-pict > a {
+  text-decoration: none;
+  color: #FEFEFE;
+  margin-right: 5px;
+}
+
+.slider-item {
+  margin-left: 46px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .form h4 {
@@ -1026,6 +1056,7 @@ fieldset {
 .content {
   display: flex;
   padding-top: 60px;
+  padding-bottom: 100px;
 }
 .content .wrapper {
   flex-direction: column;
@@ -1052,6 +1083,9 @@ fieldset {
 .slider-BROADCAST {
   display: flex;
   flex-direction: column;
+  position: relative;
+  margin-left: 40px;
+  margin-top: 65px;
 }
 
 .round-animal {
@@ -1069,16 +1103,70 @@ fieldset {
   object-fit: unset;
 }
 
+.panda {
+  background-image: url("./src/assets/index/4-1.png");
+  width: 108px;
+  height: 108px;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+}
+
+.bird {
+  background-image: url("./src/assets/index/4-2.png");
+  width: 108px;
+  height: 108px;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+}
+
+.monkey {
+  background-image: url("./src/assets/index/4-3.png");
+  width: 108px;
+  height: 108px;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+}
+
+.crocodail {
+  background-image: url("./src/assets/index/4-4.png");
+  width: 108px;
+  height: 108px;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+}
+
 .active-round {
-  border-image-source: linear-gradient(103.3deg, #07EEE0 -15.1%, #DF496D 92.15%);
-  border: 3px solid;
-  border-color: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+  border: 3px solid red;
+  width: 137px;
+  height: 137px;
 }
 
 .small-video {
   margin-top: 30px;
   display: flex;
   justify-content: space-around;
+}
+
+.vectorUp {
+  transform: rotate(90deg);
+  position: absolute;
+  top: -350px;
+  left: 50%;
+}
+
+.vectorDown {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: 50%;
+  bottom: 160px;
 }
 
 .map-content {

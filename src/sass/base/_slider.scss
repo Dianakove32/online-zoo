@@ -5,7 +5,8 @@
     position: absolute;
     right: 0;
     bottom: 311px;
-    width:794px ;
+    width:1100px ;
+
 
 }
 .vector{
@@ -22,4 +23,36 @@ margin-top: 300px;
    display: flex;
    justify-content: space-between;
     width: 1200px;
+}
+.slider-container{
+    margin-left: 107px;
+
+ display: flex;
+    .sl-panda{
+        margin-left: 46px;
+        position: relative;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        .content-pict{
+            position: absolute;
+            bottom: 20px;
+            width: 210px;
+            color: $base;
+            margin-left: 20px;
+            text-align: center;
+            >a{
+                text-decoration: none;
+                color: $base;
+                margin-right: 5px;
+            }
+
+        }
+    }
+
+}
+.slider-item{
+margin-left: 46px;
+margin-top: auto;
+margin-bottom: auto;
 }
