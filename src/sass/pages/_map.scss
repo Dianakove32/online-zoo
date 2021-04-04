@@ -9,7 +9,7 @@
         }
         p{
             margin-top: 20px;
-            margin-bottom: 79px;
+            margin-bottom: 54px;
             width: 790px;
             font-size: 14px;
         }
@@ -17,4 +17,16 @@
     .btn{
         margin-top: 60px;
     }
+}
+.slider-map{
+             flex-direction: row;
+             margin-bottom:  80px;
+             .round-animal{
+margin-left:  20px ;
+             }
+             .active-round{
+                 margin-top: auto;
+                 margin-bottom: auto;
+             }
+
 }
