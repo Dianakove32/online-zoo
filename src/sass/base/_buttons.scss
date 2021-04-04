@@ -12,3 +12,29 @@
         background: $gradient-hover;
     }
 }
+.icon-play{
+    display: flex;
+    align-items: center;
+}
+.circ-play {
+    margin-left: 40px;
+    margin-right: 5px;
+    width: 32px;
+height: 32px;
+border-radius: 50%;
+border: 1px solid #FFFFFF;
+    .traingal{
+        margin-left: auto;
+        margin-top: 6px;
+        margin-right: auto;
+
+        width:  0 ;
+        height:  0 ;
+        border-style: solid;
+        border-width: 8px 0 8px 12.6px;
+        border-color: transparent transparent transparent #f4f4f5;
+        line-height: 0px;
+
+
+    }
+}
