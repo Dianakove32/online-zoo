@@ -483,6 +483,7 @@ h4 {
   border: 1px solid #FFFFFF;
 }
 .circ-play .traingal {
+  display: inline-block;
   margin-left: auto;
   margin-top: 6px;
   margin-right: auto;
@@ -591,12 +592,23 @@ label {
   margin-left: 107px;
   display: flex;
 }
+.slider-container .circ-play {
+  margin-left: 0;
+}
 
 .sl-panda {
   margin-left: 46px;
   position: relative;
   margin-top: auto;
   margin-bottom: auto;
+}
+.sl-panda .traingal {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-left: 8px solid #4BD8B5;
+  border-bottom: 4px solid transparent;
 }
 .sl-panda .content-pict {
   position: absolute;
@@ -606,10 +618,21 @@ label {
   margin-left: 20px;
   text-align: center;
 }
-.sl-panda .content-pict > a {
+.sl-panda .content-pict .watch-green {
+  color: #4BD8B5;
+}
+.sl-panda .content-pict a {
   text-decoration: none;
   color: #FEFEFE;
   margin-right: 5px;
+  font-size: 12px;
+}
+.sl-panda .content-pict a span {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  padding: 5px;
 }
 
 .slider-item {
@@ -631,7 +654,7 @@ label {
   cursor: pointer;
 }
 .sl-panda:hover .hover-img {
-  opacity: 0.8;
+  opacity: 0.7;
   -moz-opacity: 0.8;
   filter: alpha(opacity=80) black;
   -khtml-opacity: 0.8;
@@ -665,10 +688,9 @@ label {
   position: absolute;
   width: 30px;
   height: 10px;
-  color: #FEFEFE;
-  top: 0;
-  left: 0;
-  z-index: 5;
+  background: #FEFEFE;
+  top: -2;
+  left: 30;
 }
 
 .form h4 {

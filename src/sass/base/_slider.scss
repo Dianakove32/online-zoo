@@ -31,7 +31,9 @@ margin-top: 300px;
     margin-left: 107px;
 
  display: flex;
-
+.circ-play{
+    margin-left: 0;
+}
 
 }
 .sl-panda{
@@ -40,6 +42,16 @@ margin-top: 300px;
     margin-top: auto;
     margin-bottom: auto;
 
+    .traingal{
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-top: 4px solid transparent;
+        border-left: 8px solid #4BD8B5;
+        border-bottom: 4px solid transparent;
+
+
+}
     .content-pict{
         position: absolute;
         bottom: 20px;
@@ -47,10 +59,22 @@ margin-top: 300px;
         color: $base;
         margin-left: 20px;
         text-align: center;
-        >a{
+        .watch-green{
+            color:#4BD8B5;
+
+        }
+        a{
             text-decoration: none;
-            color: $base;
+            color:$base;
             margin-right: 5px;
+            font-size: 12px;
+            span{
+                border: 1px solid #fff;
+                border-radius: 50%;
+                width: 24px;
+                height: 24px;
+                padding: 5px;
+            }
         }
 
     }
@@ -76,7 +100,8 @@ margin-bottom: auto;
 .sl-panda:hover {
     background-color:#000;
      .hover-img{
-        opacity:0.8;
+
+        opacity:0.7;
         -moz-opacity:0.8;
         filter: alpha(opacity=80) black;
         -khtml-opacity: 0.8;
@@ -116,9 +141,9 @@ position: relative;
         position: absolute;
         width: 30px;
 height: 10px;
-color: $base;
-top: 0;
-left: 0;
-z-index: 5;
+background: $base;
+top: -2;
+left: 30;
+
     }
 }
