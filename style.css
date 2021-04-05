@@ -627,10 +627,48 @@ label {
 }
 
 .sl-panda:hover {
+  background-color: #000;
   cursor: pointer;
+}
+.sl-panda:hover .hover-img {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=80) black;
+  -khtml-opacity: 0.8;
+  background-color: #000;
 }
 .sl-panda:hover .hidden {
   opacity: 1;
+}
+
+.progress-container {
+  position: relative;
+  margin-left: 335px;
+  margin-top: 20px;
+  color: #FEFEFE;
+}
+.progress-container .num-progress {
+  margin-left: 89px;
+  font-size: 14px;
+}
+.progress-container .num-progress span {
+  font-size: 10px;
+}
+.progress-container .line-progress {
+  margin-top: 14px;
+  width: 245px;
+  height: 5px;
+  background: rgba(189, 189, 189, 0.57);
+  position: relative;
+}
+.progress-container .dot-progress {
+  position: absolute;
+  width: 30px;
+  height: 10px;
+  color: #FEFEFE;
+  top: 0;
+  left: 0;
+  z-index: 5;
 }
 
 .form h4 {
@@ -879,6 +917,13 @@ fieldset {
 .howIt-wrapper .btn {
   margin-top: 30px;
 }
+.howIt-wrapper .progress-container {
+  margin-left: 272px;
+  color: #333333;
+}
+.howIt-wrapper .progress-container span {
+  opacity: 0.7;
+}
 
 .howIt-text {
   font-size: 14px;
@@ -923,6 +968,13 @@ fieldset {
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+.petsInZoo .progress-container {
+  margin-left: 476px;
+  color: #333333;
+}
+.petsInZoo .progress-container span {
+  opacity: 0.7;
 }
 .petsInZoo .btn {
   margin-top: 30px;
@@ -981,6 +1033,14 @@ fieldset {
 }
 .testimonials .wrapper .btn {
   margin-top: 32px;
+}
+.testimonials .progress-container {
+  margin-top: 0;
+  margin-left: -3px;
+  color: #333333;
+}
+.testimonials .progress-container span {
+  opacity: 0.7;
 }
 
 .card-slider {
@@ -1253,10 +1313,19 @@ fieldset {
 .map-content .btn {
   margin-top: 60px;
 }
+.map-content .progress-container {
+  margin-top: 0;
+  margin-bottom: 93px;
+  margin-left: 0;
+  color: #333333;
+}
+.map-content .progress-container span {
+  opacity: 0.7;
+}
 
 .slider-map {
   flex-direction: row;
-  margin-bottom: 80px;
+  margin-bottom: 56px;
 }
 .slider-map .round-animal {
   margin-left: 20px;
@@ -1264,6 +1333,46 @@ fieldset {
 .slider-map .active-round {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.lion {
+  background-image: url("./src/assets/lion.png");
+  width: 108px;
+  height: 108px;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+}
+
+.tiger {
+  background-image: url("./src/assets/tiger.png");
+  width: 108px;
+  height: 108px;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+}
+
+.slon {
+  background-image: url("./src/assets/slon.png");
+  width: 108px;
+  height: 108px;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+}
+
+.zebra {
+  background-image: url("./src/assets/ze.png");
+  width: 108px;
+  height: 108px;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -74,9 +74,51 @@ margin-bottom: auto;
 //    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 // }
 .sl-panda:hover {
+    background-color:#000;
+     .hover-img{
+        opacity:0.8;
+        -moz-opacity:0.8;
+        filter: alpha(opacity=80) black;
+        -khtml-opacity: 0.8;
+        background-color:#000;
+     }
+
+
     cursor: pointer;
     @extend %transition;
     .hidden{
         opacity: 1;
+    }
+}
+
+.progress-container{
+    position: relative;
+  margin-left: 335px;
+    margin-top: 20px;
+    color: $base;
+
+    .num-progress{
+        margin-left: 89px;
+        font-size: 14px;
+span{
+    font-size: 10px;
+}
+    }
+
+    .line-progress{
+      margin-top: 14px;
+        width: 245px;
+height: 5px;
+background: rgba(189, 189, 189, 0.57);
+position: relative;
+    }
+    .dot-progress{
+        position: absolute;
+        width: 30px;
+height: 10px;
+color: $base;
+top: 0;
+left: 0;
+z-index: 5;
     }
 }
