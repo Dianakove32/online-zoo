@@ -42,6 +42,11 @@ margin-bottom: 10px;
     border-radius: 50%;
     object-fit: unset;
 }
+&:hover{
+    border: 3px solid red  ;
+    width: 130px;
+    height: 130px;
+}
 }
   .panda{
      background-image: url('./src/assets/index/4-1.png');

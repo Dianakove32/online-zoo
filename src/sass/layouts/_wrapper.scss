@@ -3,6 +3,15 @@
     width: 100%;
     margin: auto;
 display: flex;
+@include middle{
+    width:900px;
+ }
+ @include tablet{
+    width:600px;
+ }
+ @include tablet{
+    width:300px;
+ }
 }
 
 .wrapper-big{
@@ -10,4 +19,14 @@ display: flex;
     width: 100%;
     margin: auto;
 display: flex;
+@include middle{
+   width:1000px;
+
+}
+@include tablet{
+    width:610px;
+ }
+@include mobail{
+    width:310px;
+ }
 }

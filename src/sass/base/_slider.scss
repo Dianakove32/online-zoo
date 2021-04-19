@@ -1,74 +1,128 @@
-.slider-watch{
+.slider-watch {
     background-image: url("./src/assets/Group 16.png");
     background-repeat: no-repeat;
     background-position: top 50% left 0;
     position: absolute;
     right: 0;
     bottom: 311px;
-    width:1100px ;
-
+    width: 1100px;
+    @include middle{
+        width: 709px;
+        }
+    @include tablet{
+        bottom:154px;
+        width: 575px;
+        }
+    @include mobail{
+        bottom:154px;
+        width: 313px;
+        overflow: hidden;
+        }
 
 }
-.vector{
+.vector {
     width: 17px;
     height: 30px;
-margin-top: 300px;
-&:hover{
-    cursor: pointer;
-    transform: scale(1.2);
-
+    margin-top: 300px;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+    @include tablet{
+        display: none;
+        }
 }
-}
-.slider-container-ourMission{
-   display: flex;
-   justify-content: space-between;
+.slider-container-ourMission {
+    display: flex;
+    justify-content: space-between;
     width: 1200px;
-    .sl-panda{
+    .sl-panda {
         margin-left: 0;
     }
+    @include tablet{
+        width: 600px;
+        overflow-x: hidden;
+        }
 }
-.slider-container{
+.slider-container {
     margin-left: 107px;
+    display: flex;
+    .circ-play {
+        margin-left: 0;
+    }
+    @include tablet{
+        // width: 600px;
+       overflow: hidden;
+       margin-left: 0;
+                }
+    & div:nth-child(4){
+          @include tablet{
+display: none;
+        }
+    }
+    & div:nth-child(5){
+          @include tablet{
+display: none;
+        }
+    }
 
- display: flex;
-.circ-play{
-    margin-left: 0;
 }
+.sl-panda {
+    @include middle {
+        img {
+            width: 210px;
+            height: 301px;
+        }
+    }
+    @include tablet {
+        img {
+            margin-right: 20px;
+        }
+    }
+
 
 }
-.sl-panda{
+.sl-panda {
     margin-left: 46px;
     position: relative;
     margin-top: auto;
     margin-bottom: auto;
+    @include mobail {
 
-    .traingal{
+
+        margin-left: 9px;
+    }
+   img {
+    @include mobail {
+height: 202px;
+            width: 140px;
+            margin-left: 9px;
+        }
+    }
+    .traingal {
         display: inline-block;
         width: 0;
         height: 0;
         border-top: 4px solid transparent;
-        border-left: 8px solid #4BD8B5;
+        border-left: 8px solid #4bd8b5;
         border-bottom: 4px solid transparent;
-
-
-}
-    .content-pict{
+    }
+    .content-pict {
         position: absolute;
         bottom: 20px;
         width: 210px;
         color: $base;
         margin-left: 20px;
         text-align: center;
-        .watch-green{
-            color:#4BD8B5;
-
+        .watch-green {
+            color: #4bd8b5;
         }
-        a{
+        a {
             text-decoration: none;
-            color:$base;
+            color: $base;
             margin-right: 5px;
             font-size: 12px;
-            span{
+            span {
                 border: 1px solid #fff;
                 border-radius: 50%;
                 width: 24px;
@@ -76,20 +130,37 @@ margin-top: 300px;
                 padding: 5px;
             }
         }
+        @include tablet{
+        width:70% ;
+        font-size: 14px;
+                    }
+        @include mobail{
+        width:128px ;
+        font-size: 14px;
+                    }
+
 
     }
 }
-.slider-item{
-margin-left: 46px;
-margin-top: auto;
-margin-bottom: auto;
+.slider-item {
+    margin-left: 46px;
+    margin-top: auto;
+    margin-bottom: auto;
+    @include mobail{
 
+        margin-left: 9px;
+    }
+    img{
+        @include mobail{
+            width: 113px;
+            margin-left: 9px;
+        }
+    }
 }
-.pointer{
+.pointer {
     cursor: pointer;
-
 }
-.hidden{
+.hidden {
     opacity: 0;
 }
 // .hidden:hover{
@@ -98,52 +169,66 @@ margin-bottom: auto;
 //    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 // }
 .sl-panda:hover {
-    background-color:#000;
-     .hover-img{
+    background-color: #000;
+    @include mobail{
+      width: 130px;
+    }
 
-        opacity:0.7;
-        -moz-opacity:0.8;
+    .hover-img {
+        opacity: 0.7;
+        -moz-opacity: 0.8;
         filter: alpha(opacity=80) black;
         -khtml-opacity: 0.8;
-        background-color:#000;
-     }
+        background-color: #000;
+        cursor: pointer;
+        @include mobail{
+            width: 130px;
+          }
+    }
 
-
-    cursor: pointer;
     @extend %transition;
-    .hidden{
+    .hidden {
         opacity: 1;
     }
 }
 
-.progress-container{
+.progress-container {
     position: relative;
-  margin-left: 335px;
+    margin-left: 335px;
     margin-top: 20px;
     color: $base;
+    @include tablet{
+        margin-left: 234px ;
 
-    .num-progress{
+                    }
+    @include mobail{
+        margin-left: 80px ;
+
+                    }
+    .num-progress {
         margin-left: 89px;
         font-size: 14px;
-span{
-    font-size: 10px;
-}
+        span {
+            font-size: 10px;
+        }
     }
 
-    .line-progress{
-      margin-top: 14px;
+    .line-progress {
+        margin-top: 14px;
         width: 245px;
-height: 5px;
-background: rgba(189, 189, 189, 0.57);
-position: relative;
+        height: 5px;
+        background: rgba(189, 189, 189, 0.57);
+        @include tablet{
+            width: 213px;
+
+                        }
     }
-    .dot-progress{
+    .dot-progress {
         position: absolute;
         width: 30px;
-height: 10px;
-background: $base;
-top: -2;
-left: 30;
-
+        height: 10px;
+        background: $base;
+        top: -2;
+        left: 30;
     }
 }

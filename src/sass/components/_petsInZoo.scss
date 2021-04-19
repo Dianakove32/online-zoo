@@ -1,24 +1,66 @@
-.petsInZoo{
+.petsInZoo {
     display: flex;
-padding-top: 100px;
-padding-bottom: 100px;
-    .wrapper{
-     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
-    .progress-container{
-
-       margin-left: 476px;
+    .progress-container {
+        margin-left: 476px;
         color: $text;
-        span{
+        span {
             opacity: 0.7;
+        }
+        @include middle {
+            margin-left: 301px;
+        }
+        @include tablet {
+            margin-left: 149px;
+        }
+        @include mobail {
+            margin-left:  0px;
+        }
+        .line-progress {
+            width: 271px;
+        }
+    }
+    .btn {
+        margin-top: 30px;
+    }
+    .sl-panda{
+        @include mobail {
+            max-width:210px ;
+  height: 301px;
+      }
+        img{
+            @include mobail {
+                max-width:210px ;
+  height: 301px;
+
+            }
         }
 
     }
-.btn{
-    margin-top: 30px;
 }
 
+.slider-container-ourMission {
+    @include middle {
+        max-width: 900px;
+    }
+    @include tablet {
+        max-width: 600px;
+        overflow: hidden;
+    }
+    @include mobail {
+        max-width: 300px;
+        overflow: hidden;
+    }
+    & div:nth-child(4) {
+        @include tablet {
+            display: none;
+        }
+    }
 }

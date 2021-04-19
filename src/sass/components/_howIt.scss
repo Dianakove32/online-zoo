@@ -18,8 +18,19 @@
         span{
             opacity: 0.7;
         }
+        @include tablet{
+            margin-left: 150px;
+            }
 
-    }
+    @include middle{
+        max-width: 100%;
+     }
+    @include mobail{
+        margin-left: 25px;
+  }   }
+    //  @include tablet{
+    //     max-width: 600px;
+    //     }
 }
 .howIt-text{
     font-size: 14px;
@@ -27,4 +38,24 @@
     margin-top: 30px;
     margin-bottom: 30px;
     color: $text;
+}
+.slider-block{
+    width: 100%;
+   img{
+       @include middle{
+             width: 100%;
+        }
+
+    @include mobail{
+
+      width: 300px;
+      height: 323px;
+      object-fit: cover;
+        }
+     }
+    //  @include tablet{
+    //      img{
+    //          width: 600px;
+    //      }
+    //     }
 }

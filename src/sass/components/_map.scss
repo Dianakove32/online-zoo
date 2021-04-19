@@ -1,66 +1,85 @@
-.map{
-
+.map {
     background-color: $bgLight;
     padding-top: 100px;
     padding-bottom: 100px;
-    .wrapper{
+    .wrapper {
         flex-direction: column;
         align-items: center;
     }
-    .btn{
-        margin-top:36px ;
+    .btn {
+        margin-top: 36px;
     }
-    h3{
+    h3 {
         margin-bottom: 60px;
     }
+
 }
-.map-container{
+.map-container {
     position: relative;
+    @include middle{
+       max-width: 900px;
+width: 100%;
+   }
+    @include tablet{
+       max-width: 600px;
+width: 100%;
+   }
+    @include mobail{
+       max-width: 300px;
+width: 100%;
+   }
+
+   .map-indx{
+        @include middle{
+          width: 100%;
+     }
+        @include tablet{
+          width: 600px;
+       }
+        @include mobail{
+          width: 100%;
+       }
+
+    }
+
 }
-.mark-map-b{
+.mark-map-b {
     position: absolute;
     left: 10.58%;
     top: 15%;
-
 }
-.mark-map-cr{
+.mark-map-cr {
     position: absolute;
     left: 20%;
     top: 19%;
-
 }
-.mark-map-m{
+.mark-map-m {
     position: absolute;
     left: 47.58%;
     top: 37%;
-
 }
-.mark-map-p{
+.mark-map-p {
     position: absolute;
     left: 73.58%;
     top: 17%;
-
 }
-.mark-hover:hover{
+.mark-hover:hover {
     cursor: pointer;
     fill: rgb(255, 38, 0) !important;
-
-
 }
-.mark-hover{
-
-}.redP{
-    fill: rgb(255, 38, 0)
+.mark-hover {
+}
+.redP {
+    fill: rgb(255, 38, 0);
 }
 
-
-  .mark:hover .tooltip{
-         display: flex;
-  }
+.mark:hover .tooltip {
+    display: flex;
+}
 
 .tooltip {
     display: none;
-     position: absolute;
+    position: absolute;
     z-index: 2;
     top: 80px;
     left: 30px;
@@ -69,35 +88,22 @@
     box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
     border-radius: 8px;
     background-color: $base;
-
-
-  }
-
-
-
-  .tooltip-pict {
-
-margin-top: 15px;
-
-img{
-
-    width: 90px;
-      height: 90px;
-              display: block;
-object-fit: cover;
-     border-radius: 50%;
-    // background-position: center;
-    // background-size: cover;
-    // flex-shrink: 0;
 }
 
+.tooltip-pict {
+    margin-top: 15px;
+
+    img {
+        width: 90px;
+        height: 90px;
+        display: block;
+        object-fit: cover;
+        border-radius: 50%;
+
+    }
 }
 
-
-
-  .tooltip-content{
+.tooltip-content {
     margin-left: 20px;
     text-align: left;
-  }
-
-
+}
